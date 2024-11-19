@@ -1,0 +1,319 @@
+/* ПРОФИЛЕ */
+.profile {
+    width: 100%;
+    height: 410px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/843/347/678/fate-series-fate-stay-night-anime-girls-saber-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    border: 1px solid #424242;
+}
+
+
+.profilebox {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(34, 34, 34, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    bottom: 0;
+}
+
+.profileavatar {
+    display: flex;
+    align-items: center;
+}
+
+.profileavatar img {
+    border-radius: 100px;
+    height: 160px;
+    margin: 0 0 150px 15px;
+    border: 4px solid #424242;
+}
+
+.userbox {
+    width: 100%;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.username-name {
+    color: white;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status{
+    height: 24px;
+    width: 24px;
+}
+
+.username-description {
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.username-links {
+    margin-top: 10px;
+    display: flex;
+}
+
+.username-description-link {
+    color: #808080;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.username-description-link:hover {
+    text-decoration: underline;
+}
+
+.username-description-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    filter: invert(61%) sepia(81%) saturate(3208%) hue-rotate(340deg) brightness(98%) contrast(94%);
+}
+
+/* КНОПОЧКА */
+.profilebutton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.profilebox button {
+    margin-top: 20px;
+    height: 30px;
+    background-color: #424242;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.profilebox button:hover {
+    background-color: #4a4a4a;
+}
+
+.profilebox button:active {
+    transform: scale(0.95);
+    background-color: #404040;
+}
+
+/* СЕКЦИИ */
+.sectionsbox {
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #424242;
+    box-sizing: border-box;
+}
+
+.sections-menu {
+    display: flex;
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #424242 #222;
+}
+
+.sections-menu img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(61%) sepia(81%) saturate(3208%) hue-rotate(340deg) brightness(98%) contrast(94%);
+
+}
+
+.sections-menu button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    color: #808080;
+    flex: 1 1 auto;
+    max-width: 150px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3);
+    justify-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.profile-photos {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #424242;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.profile-buttons button {
+    width: 100%;
+    margin-top: 15px;
+    height: 30px;
+    background-color: #424242;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.sections-menu button:hover {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sections-menu button.active {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.profile-buttons button:hover {
+    background-color: #4a4a4a;
+}
+
+.profile-buttons button:active {
+    transform: scale(0.95);
+    background-color: #404040;
+}
+
+/* ДРУЗЯШКИ */
+.rightbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.friendsbox{
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #424242;
+    box-sizing: border-box;
+}
+
+.friendstext a{
+    padding: 0 10px;
+    color: white;
+}
+
+.friendsimg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.friendsimg a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.friendsimg a:hover{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.friendsimg img{
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* Other */
+.profilepage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.profileboxbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 0 20px 20px 20px;
+  }

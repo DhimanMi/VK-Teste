@@ -1,0 +1,332 @@
+/* ХЕДКРАБ */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+.header {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    padding: 0 15%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logo-container {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header div {
+    align-items: center;
+}
+
+.vk_logo {
+    width: 160px;
+}
+
+.search {
+    height: 30px;
+    border-radius: 10px;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.search:hover {
+    background-color: #4a4a4a;
+}
+
+/* ШАПКА */
+.h_a_container {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.h_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 50px;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.h_a_i {
+    height: 24px;
+    filter: invert(61%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(94%);
+}
+
+.h_a:hover {
+    background-color: #4a4a4a;
+}
+
+.h_a:hover .h_a_i {
+    filter: invert(61%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(94%);
+}
+
+/* АВАВА */
+.header-avatar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    padding: 0 10px;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    background-color: #4a4a4a;
+}
+
+.arrow {
+    width: 18px;
+    height: 18px;
+    filter: invert(61%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(94%);
+}
+
+/* ВЫПАДАШКА */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 15%;
+    background-color: rgba(34, 34, 34, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    width: 360px;
+    border: 1px solid #424242;
+    padding: 5px 0;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content-img img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    filter: invert(31%) sepia(95%) saturate(2642%) hue-rotate(191deg) brightness(105%) contrast(101%);
+}
+
+.dropdown-content a:hover {
+    background-color: #4a4a4a;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.profile-avatar-container {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    margin-top: 20px;
+}
+
+
+.profile-avatar-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    margin: -5px;
+}
+
+.profile-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile-phone {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+.profile-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.profile-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    background-color: #2B2B2B;
+    border: 1px solid #424242;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.profile-button button img {
+    margin-left: 7px;
+    width: auto;
+    height: 16px;
+}
+
+.profile-button button:hover {
+    background-color: #4a4a4a;
+}
+
+
+.profile-button button:active {
+    transform: scale(0.95);
+    background-color: #404040;
+}
+
+.add-account {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add-account-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #353535;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.add-account img {
+    filter: invert(31%) sepia(95%) saturate(2642%) hue-rotate(191deg) brightness(105%) contrast(101%);
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.avatar:hover {
+    background-color: #4a4a4a;
+}
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Other */
+.divider-dropbox {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 10px 10px 5px 10px;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 0 2% 0 2%;
+        border-radius: 10px;
+    }
+
+    .h_a {
+        display: none;
+    }
+
+    .dropdown-content-container{
+        background-color: rgba(34, 34, 34, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        margin: 5px 9px 15px 9px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        border: 1px solid #424242;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        right: 0;
+        border-radius: 10px;
+        padding: 1 10px;
+        background-color: rgba(34, 34, 34, 0);
+        backdrop-filter: none;
+        border: none;
+    }
+
+    .header-container {
+        padding: 10px 10px;
+    }
+}
